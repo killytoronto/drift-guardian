@@ -1,0 +1,69 @@
+version: 1
+
+llm:
+  enabled: false
+  # Optional LLM assist (local recommended):
+  # provider: ollama
+  # base_url: http://localhost:11434
+  # model: llama3.1
+  # max_tokens: 500
+  # temperature: 0.1
+
+docs-drift:
+  enabled: true
+  full_scan: auto
+  full_scan_max_files: 200
+  code-files:
+    - "src/**/*.ts"
+    - "src/**/*.js"
+    - "src/**/*.py"
+    - "src/**/*.go"
+    - "src/**/*.rb"
+    - "src/**/*.java"
+    - "src/**/*.kt"
+    - "src/**/*.cs"
+  doc-files:
+    - "README.md"
+    - "docs/**/*.md"
+  extract:
+    - function-signatures
+    - class-names
+    - api-endpoints
+    - env-variables
+    - config-keys
+    - cli-flags
+    - payload-keys
+  payload_keys_allowlist:
+    - user_id
+    - uid
+  max_doc_chars: 20000
+
+logic-drift:
+  enabled: true
+  rules:
+    - name: Billing Logic
+      code-files:
+        - "src/billing/**/*.ts"
+        - "src/billing/**/*.js"
+      policy-files:
+        - "docs/refund-policy.md"
+        - "legal/terms.md"
+      comparisons:
+        - name: Refund window (days)
+          code_pattern: "refundWindowDays\\s*=\\s*(\\d+)"
+          policy_pattern: "(\\d+)\\s*day refund"
+          compare: equals
+    - name: Auth Logic
+      code-files:
+        - "src/auth/**/*.ts"
+        - "src/auth/**/*.js"
+      policy-files:
+        - "docs/security-policy.md"
+
+output:
+  format: github-comment
+  severity:
+    docs-drift: warning
+    logic-drift: error
+  fail_on_error: true
+  allow_nondeterministic_fail: false

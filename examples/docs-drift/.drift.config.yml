@@ -1,0 +1,17 @@
+version: 1
+
+llm:
+  enabled: false
+
+docs-drift:
+  enabled: true
+  code-files:
+    - "src/**/*.js"
+  doc-files:
+    - "docs/**/*.md"
+
+logic-drift:
+  enabled: false
+
+output:
+  fail_on_error: false

@@ -1,0 +1,24 @@
+# Test files
+test/
+*.test.js
+*.spec.js
+
+# Development
+.github/
+.vscode/
+.idea/
+examples/
+docs/
+
+# Git
+.git/
+.gitignore
+
+# CI
+.travis.yml
+.circleci/
+
+# Misc
+*.log
+.DS_Store
+READY_FOR_RELEASE.md

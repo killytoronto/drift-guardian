@@ -1,0 +1,20 @@
+version: 1
+
+llm:
+  enabled: false
+
+logic-drift:
+  enabled: true
+  rules:
+    - name: Refund Policy
+      code-files:
+        - "src/billing/**/*.js"
+      policy-files:
+        - "docs/refund-policy.md"
+        - "legal/terms.md"
+
+docs-drift:
+  enabled: false
+
+output:
+  fail_on_error: true

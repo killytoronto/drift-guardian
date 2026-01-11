@@ -1,0 +1,21 @@
+name: Drift Guardian
+description: Detects drift between code, docs, and business policies
+author: Drift Guardian
+inputs:
+  config:
+    description: Path to the drift config file
+    required: false
+    default: .drift.config.yml
+  llm-api-key:
+    description: API key for cloud LLM providers (only used when llm.enabled is true)
+    required: false
+  fail-on-error:
+    description: Fail the action when error-level drift is found
+    required: false
+    default: "true"
+runs:
+  using: node20
+  main: src/index.js
+branding:
+  icon: alert-triangle
+  color: orange
