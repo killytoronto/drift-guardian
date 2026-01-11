@@ -395,14 +395,6 @@ If this helped you, please star the repo! ⭐
 
 ---
 
-## 💬 Support & Community
-
-- 🐛 **Bug Reports:** [GitHub Issues](https://github.com/yourusername/drift-guardian/issues)
-- 💡 **Feature Requests:** [GitHub Issues](https://github.com/yourusername/drift-guardian/issues)
-- 📣 **Discussions:** [GitHub Discussions](https://github.com/yourusername/drift-guardian/discussions)
-- 📖 **Documentation:** You're reading it! 😄
-
----
 
 ## 🎉 Thanks for Stopping By!
 
