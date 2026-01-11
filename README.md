@@ -422,6 +422,7 @@ Built with ❤️ for teams who care about documentation but don't want to share
 ## 🚀 What's Next?
 
 ### Roadmap
+- [ ] Deeper language parsers (AST/grammar) or tuned regex bundles per ecosystem
 - [ ] VSCode extension
 - [ ] More language support (Rust, PHP, Swift)
 - [ ] Better diff visualization
