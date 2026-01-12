@@ -8,7 +8,7 @@
 
 ---
 
-## 🎯 What is this?
+## What is this?
 
 Ever make a code change and forget to update the docs? **Drift Guardian** catches that automatically!
 
@@ -33,10 +33,10 @@ If you find this useful, **please give it a star!** ⭐
 It helps others discover the tool and keeps me motivated to maintain it!
 
 Also feel free to:
-- 📦 Download it and use it in your projects
-- 🐛 Report bugs or request features
-- 🤝 Contribute improvements
-- 📣 Share it with your team
+- Download it and use it in your projects
+- Report bugs or request features
+- Contribute improvements
+- Share it with your team
 
 **Do whatever - have fun and thanks for stopping by!** 🎉
 
@@ -55,7 +55,7 @@ Optional LLM support is available if you want it, but the tool works great witho
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -141,7 +141,7 @@ jobs:
 
 ---
 
-## 🎨 What Does It Detect?
+## What Does It Detect?
 
 ### Code Elements (10+ types!)
 
@@ -170,7 +170,7 @@ jobs:
 
 ---
 
-## 💪 Real-World Example
+## Real-World Example
 
 ### Before (Code Changed, Docs Stale)
 
@@ -229,7 +229,7 @@ Update your docs → No warnings! ✅
 | Medium (100 functions) | ~4ms | 68K entities/sec |
 | Large (500 functions) | ~35ms | 38K entities/sec |
 
-Zero dependencies = Fast startup time! 🚀
+Zero dependencies = Fast startup time! 
 
 ---
 
@@ -296,7 +296,7 @@ docs-drift:
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests (76 tests)
@@ -356,7 +356,7 @@ PRs welcome! Please:
 
 ---
 
-## 🎓 How It Works
+## How It Works
 
 1. **Extract** - Scans changed code files for functions, APIs, env vars, etc.
 2. **Compare** - Checks if documentation mentions these elements
@@ -367,7 +367,7 @@ All regex patterns are protected against ReDoS attacks. All inputs are validated
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 **This project was built with assistance from:**
 - 🤖 **Claude Code** - Anthropic's AI coding assistant
@@ -379,7 +379,7 @@ Special thanks to the open-source community for inspiration and feedback! ❤️
 
 ---
 
-## 📜 License
+## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
@@ -411,7 +411,7 @@ Built with ❤️ for teams who care about documentation but don't want to share
 
 ---
 
-## 🚀 What's Next?
+## What's Next?
 
 ### Roadmap
 - [ ] Deeper language parsers (AST/grammar) or tuned regex bundles per ecosystem
@@ -421,7 +421,7 @@ Built with ❤️ for teams who care about documentation but don't want to share
 - [ ] Custom extractor plugins
 - [ ] Web dashboard
 
-Want to help? PRs welcome! 🙌
+Want to help? PRs welcome!
 
 ---
 
